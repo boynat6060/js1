@@ -13,6 +13,8 @@
       <button id="button1" onclick="func1()">Button 1</button>
       <br>
       <button onclick="window.print()">Print</button>
+      <br>
+      <input id="temp">Enter the temprature in Faherenheit.</input>
     </center>
     <script>
       let var1 = "test";
@@ -23,6 +25,10 @@
       function func1() {
         window.alert("button1 has been pressed.");
         document.getElementById("text").innerText = var2;
+      }
+      let tempF = document.getElementById("temp");
+      function displayTemp() {
+        document.getElementById("tempText").innerText = tempF;
       }
     </script>
   </body>
